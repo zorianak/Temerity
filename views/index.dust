@@ -2,23 +2,23 @@
 <html>
     <head>
         {! load CSS !}
-        {@eq key=pageName value="Index"}
-            {>css-main/}
-        {:else}
-            {>css-default/}
-        {/eq}
+        {>"{css}"/}
 
         <title>{title}</title>
+
+        <script src="//use.typekit.net/ylu0beu.js"></script>
+        <script>try{Typekit.load();}catch(e){}</script>
     </head>
 
     <body>
         {! Set up the header. The main has links, default does not !}
-        {@eq key=pageName value="Index"}
-            {>header-main/}
-        {:else}
-            {>header-default/}
-        {/eq}
+        {>"{header}"/}
 
         {! Load corn tents !}
+
+        {!Load scripts !}
+        {#scripts}
+            <script src="{src}" type="text/javascript"></script>
+        {/scripts}
     </body>
 <html>

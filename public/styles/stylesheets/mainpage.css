@@ -1,0 +1,69 @@
+/* line 3, ../sass/mainpage.scss */
+.media-list {
+  list-style-type: none;
+  float: right;
+  margin-top: 11px;
+}
+/* line 8, ../sass/mainpage.scss */
+.media-list li {
+  float: left;
+  margin-left: 40px;
+  height: 50px;
+  width: 50px;
+}
+/* line 14, ../sass/mainpage.scss */
+.media-list li a {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+/* line 20, ../sass/mainpage.scss */
+.media-list li.twitter {
+  background: url(../../images/icons.png) -127px -79px no-repeat;
+}
+/* line 22, ../sass/mainpage.scss */
+.media-list li.twitter:hover {
+  background: url(../../images/icons.png) -129px -155px no-repeat;
+}
+/* line 26, ../sass/mainpage.scss */
+.media-list li.video {
+  background: url(../../images/icons.png) -12px -79px no-repeat;
+}
+/* line 28, ../sass/mainpage.scss */
+.media-list li.video:hover {
+  background: url(../../images/icons.png) -13px -155px no-repeat;
+}
+/* line 32, ../sass/mainpage.scss */
+.media-list li.wcl {
+  background: url(../../images/icons.png) -240px -79px no-repeat;
+}
+/* line 34, ../sass/mainpage.scss */
+.media-list li.wcl:hover {
+  background: url(../../images/icons.png) -241px -155px no-repeat;
+}
+
+/* line 41, ../sass/mainpage.scss */
+.blurp {
+  width: 100%;
+  background: #4c8bce;
+  text-shadow: 2px 2px 8px black;
+  text-align: center;
+  color: #b7cbea;
+}
+/* line 48, ../sass/mainpage.scss */
+.blurp strong {
+  font-weight: bold;
+  color: #fff;
+}
+/* line 55, ../sass/mainpage.scss */
+.blurp .about1 {
+  font-size: 24pt;
+}
+/* line 58, ../sass/mainpage.scss */
+.blurp .about2 {
+  font-size: 20pt;
+}
+/* line 62, ../sass/mainpage.scss */
+.blurp.moonrise {
+  background: url("images/backgrounds/randomBgs/moonrise.png") center left no-repeat;
+}

@@ -11,41 +11,5 @@ header {
         float: left;
         margin-top:5px;
     }
-    .media-list{
-        list-style-type: none;
-        float: right;
-        margin-top:11px;
 
-        li {
-            float: left;
-            margin-left:40px;
-            height: 50px;
-            width: 50px;
-
-            a {
-                display: block;
-                height: 100%;
-                width: 100%;
-            }
-        }
-        li.twitter {
-            background: url(../../images/icons.png) -127px -79px no-repeat;
-            &:hover {
-                background: url(../../images/icons.png) -129px -155px no-repeat;
-            }
-        }
-        li.video {
-            background: url(../../images/icons.png) -12px -79px no-repeat;
-            &:hover {
-                background: url(../../images/icons.png) -13px -155px no-repeat;
-            }
-        }
-        li.wcl {
-            background: url(../../images/icons.png) -240px -79px no-repeat;
-            &:hover {
-                background: url(../../images/icons.png) -241px -155px no-repeat;
-            }
-        }
-
-    }
 }

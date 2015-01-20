@@ -9,7 +9,14 @@ var config = {
     },
     message: "I like cats.",
     cool: "Kim is cool.",
-    pageName: "Index"
+    pageName: "Index",
+    header: "mainpage/header-main",
+    css: "mainpage/css-main",
+    scripts: [
+        {"src": "https://code.jquery.com/jquery-2.1.3.min.js"},
+        {"src": "/javascripts/randombg.js"},
+        {"src": "/javascripts/init-main.js"}
+    ]
 };
 
 /* GET home page. */

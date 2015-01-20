@@ -1,3 +1,4 @@
-<link href="/styles/stylesheets/reset.css" rel="stylesheet" />
+    <link href="/styles/stylesheets/reset.css" rel="stylesheet" />
     <link href="/styles/stylesheets/temerity.css" rel="stylesheet" />
     <link href="/styles/stylesheets/header.css" rel="stylesheet" />
+    <link href="/styles/stylesheets/mainpage.css" rel="stylesheet" />

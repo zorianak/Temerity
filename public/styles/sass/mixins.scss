@@ -1,3 +1,27 @@
+// lets set some colors!
+$lavender: #c9d2ff;
+$mid-lavender: #b8c2ff;
+$blue-lavendar: #b7cbea;
+$purple: #9987d1;
+$plum: #6c5ca0;
+
+$lightest-teal: #abddfe;
+$blue: #4c8bce;
+
+$light-green: #a2e5ed;
+$forest-green: #307179;
+
+$white: #fff;
+
+// Backgrounds for randomBg.
+$faetower: 'images/backgrounds/randomBgs/faetower.png';
+$mistvalley: 'images/backgrounds/randomBgs/mistvalley.png';
+$moonrise: 'images/backgrounds/randomBgs/moonrise.png';
+$shroomvalley: 'images/backgrounds/randomBgs/shroomvalley.png';
+$sunsetwillows: 'images/backgrounds/randomBgs/sunsetwillows.png';
+$zangarra: 'images/backgrounds/randomBgs/zangarra.png';
+
+
 @mixin linear-gradient($top, $bottom) {
   background: $top; /* Old browsers */
     background: -moz-linear-gradient(top,  $top 0%, $bottom 100%); /* FF3.6+ */

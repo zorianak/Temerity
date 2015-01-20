@@ -1,6 +1,37 @@
 var keystone = require('keystone'),
 	async = require('async');
 
+var config = {
+    title: "Temerity is cool",
+    author: {
+        name: 'rawr'
+    },
+    message: "I like cats.",
+    cool: "Kim is cool.",
+    pageName: "Blog",
+    adminNav: "../layouts/default/admin-nav.dust",
+    header: "../layouts/default/header-default",
+    navTemplate: "../layouts/mainpage/nav-main",
+    content: "../layouts/mainpage/footer-main",
+    footer: "../layouts/mainpage/footer-main",
+    css: "../layouts/default/css-default",
+    scripts: [
+        {"src": "https://code.jquery.com/jquery-2.1.3.min.js"},
+        {"src": "/javascripts/randombg.js"},
+        {"src": "/javascripts/latest-tweet.js"},
+        {"src": "/javascripts/init-main.js"}
+    ],
+    navItems: [
+        {"name": "Home", "src": "/"},
+        {"name": "News", "src": "/news"},
+        {"name": "Forum", "src": "/forum"},
+        {"name": "The Guild", "src": "/guild"},
+        {"name": "Media", "src": "/media"},
+        {"name": "Recruitment", "src": "/recruitment"},
+        {"name": "Sales", "src": "/sales"}
+    ]
+};
+
 exports = module.exports = function(req, res) {
 
 	var view = new keystone.View(req, res),
@@ -81,6 +112,6 @@ exports = module.exports = function(req, res) {
 	});
 
 	// Render the view
-	view.render('blog');
+	view.render('blog', config);
 
 };

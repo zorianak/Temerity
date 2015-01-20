@@ -30,14 +30,13 @@
 
         {> "{navTemplate}" /}
 
-<!--
-        <div class="body-content" data-module="{+module/}">
-            {+content/}
-        </div>
--->
-
         {! Load corn tents !}
+        {@eq key=pageName value="Index"}
         {>"{content}"/}
+        {:else}
+        {+content/}
+        {/eq}
+
 
         {! Load footer !}
         {>"{footer}"/}

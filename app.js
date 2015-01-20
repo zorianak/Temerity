@@ -9,7 +9,9 @@ var routes = require('./routes/index');
 var users = require('./routes/users');
 
 var app = express();
-var kleiDust = require('klei-dust');
+var kleiDust = require('klei-dust'),
+    dust = require('dustjs-linkedin');
+    dust.helper = require('dustjs-helpers');
 
 app.set('port', process.env.PORT || 3000);
 app.set('views', __dirname + '/views');

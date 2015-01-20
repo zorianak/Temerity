@@ -8,8 +8,15 @@
     </head>
 
     <body>
-        {>header-main/}
-        <h1>{title}</h1>
+        {@eq key=1 value=1}
+            {>header-main/}
+            <p>dog</p>
+        {:else}
+            {pageName}
+            rawr
+        {/eq}
 
+
+        {pageName}
     </body>
 <html>

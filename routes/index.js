@@ -9,9 +9,7 @@ var config = {
     },
     message: "I like cats.",
     cool: "Kim is cool.",
-    header: "../views/header-main.dust",
-    footer: "",
-    content: ""
+    pageName: "Index"
 };
 
 /* GET home page. */

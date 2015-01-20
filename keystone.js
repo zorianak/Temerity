@@ -1,10 +1,14 @@
 // Simulate config options from your production environment by
 // customising the .env file in your project's root folder.
-require('dotenv').load();
+var dotenv = require('dotenv');
+dotenv.load();
 
 // Require keystone
 var keystone = require('keystone'),
-	handlebars = require('express-handlebars');
+	kleiDust = require('klei-dust'),
+    dust = require('dustjs-linkedin'),
+    cons = require('consolidate');
+    dust.helper = require('dustjs-helpers');
 
 // Initialise Keystone with your project's configuration.
 // See http://keystonejs.com/guide/config for available options
@@ -19,15 +23,8 @@ keystone.init({
 	'static': 'public',
 	'favicon': 'public/favicon.ico',
 	'views': 'templates/views',
-	'view engine': 'hbs',
-
-	'custom engine': handlebars.create({
-		layoutsDir: 'templates/views/layouts',
-		partialsDir: 'templates/views/partials',
-		defaultLayout: 'default',
-		helpers: new require('./templates/views/helpers')(),
-		extname: '.hbs'
-	}).engine,
+	'custom engine': cons.dust,
+    'view engine': 'dust',
 
 	'auto update': true,
 	'session': true,

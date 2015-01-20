@@ -1,40 +1,46 @@
-var express = require('express'),
-    router = express.Router();
+/**
+ * This file is where you define your application routes and controllers.
+ *
+ * Start by including the middleware you want to run for every request;
+ * you can attach middleware to the pre('routes') and pre('render') events.
+ *
+ * For simplicity, the default setup for route controllers is for each to be
+ * in its own file, and we import all the files in the /routes/views directory.
+ *
+ * Each of these files is a route controller, and is responsible for all the
+ * processing that needs to happen for the route (e.g. loading data, handling
+ * form submissions, rendering the view template, etc).
+ *
+ * Bind each route pattern your application should respond to in the function
+ * that is exported from this module, following the examples below.
+ *
+ * See the Express application routing documentation for more information:
+ * http://expressjs.com/api.html#app.VERB
+ */
 
-// let's set up our config variable
-var config = {
-    title: "Temerity is cool",
-    author: {
-        name: 'rawr'
-    },
-    message: "I like cats.",
-    cool: "Kim is cool.",
-    pageName: "Index",
-    header: "mainpage/header-main",
-    navTemplate: "mainpage/nav-main",
-    content: "mainpage/content-main",
-    footer: "mainpage/footer-main",
-    css: "mainpage/css-main",
-    scripts: [
-        {"src": "https://code.jquery.com/jquery-2.1.3.min.js"},
-        {"src": "/javascripts/randombg.js"},
-        {"src": "/javascripts/latest-tweet.js"},
-        {"src": "/javascripts/init-main.js"}
-    ],
-    navItems: [
-        {"name": "Home", "src": "/"},
-        {"name": "News", "src": "/news"},
-        {"name": "Forum", "src": "/forum"},
-        {"name": "The Guild", "src": "/guild"},
-        {"name": "Media", "src": "/media"},
-        {"name": "Recruitment", "src": "/recruitment"},
-        {"name": "Sales", "src": "/sales"}
-    ]
+var keystone = require('keystone'),
+	middleware = require('./middleware'),
+	importRoutes = keystone.importer(__dirname);
+
+// Common Middleware
+keystone.pre('routes', middleware.initLocals);
+keystone.pre('render', middleware.flashMessages);
+
+// Import Route Controllers
+var routes = {
+	views: importRoutes('./views')
 };
 
-/* GET home page. */
-router.get('/', function(req, res) {
-  res.render('index', config );
-});
+// Setup Route Bindings
+exports = module.exports = function(app) {
 
-module.exports = router;
+	// Views
+	app.get('/', routes.views.index);
+	app.get('/blog/:category?', routes.views.blog);
+	app.get('/blog/post/:post', routes.views.post);
+
+
+	// NOTE: To protect a route so that only admins can see it, use the requireUser middleware:
+	// app.get('/protected', middleware.requireUser, routes.views.protected);
+
+};

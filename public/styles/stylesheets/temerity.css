@@ -3,13 +3,24 @@ body {
   font-family: arial, sans-serif;
 }
 
-/* line 8, ../sass/temerity.scss */
+/* line 12, ../sass/temerity.scss */
+h1 {
+  font-size: 30pt;
+  margin: 0 0 15px 0;
+}
+
+/* line 16, ../sass/temerity.scss */
+p {
+  padding-bottom: 1em;
+}
+
+/* line 20, ../sass/temerity.scss */
 .center-content {
   width: 960px;
   margin: 0 auto;
 }
 
-/* line 13, ../sass/temerity.scss */
+/* line 25, ../sass/temerity.scss */
 .clear {
   clear: both;
 }

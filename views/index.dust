@@ -16,6 +16,7 @@
         {>"{navTemplate}"/}
 
         {! Load corn tents !}
+        {>"{content}"/}
 
         {!Load scripts !}
         {#scripts}

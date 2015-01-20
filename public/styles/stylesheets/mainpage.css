@@ -120,11 +120,11 @@
   float: left;
   font-size: 20pt;
   font-weight: 600;
-  padding: 15px 20px;
 }
-/* line 103, ../sass/mainpage.scss */
+/* line 102, ../sass/mainpage.scss */
 #main-nav li a {
   display: block;
+  padding: 15px 20px;
   width: 100%;
   height: 100%;
   color: #214158;
@@ -133,4 +133,44 @@
 /* line 110, ../sass/mainpage.scss */
 #main-nav li a:hover {
   color: #307179;
+}
+
+/* line 117, ../sass/mainpage.scss */
+#main-content {
+  background: #abddfe;
+  padding-top: 15px;
+  -webkit-box-shadow: inset 0px 9px 24px -10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: inset 0px 9px 24px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: inset 0px 9px 24px -10px rgba(0, 0, 0, 0.75);
+}
+
+/* line 126, ../sass/mainpage.scss */
+#killshots {
+  padding-bottom: 10px;
+}
+/* line 129, ../sass/mainpage.scss */
+#killshots .killshots-descript {
+  float: left;
+  width: 490px;
+  margin-right: 15px;
+}
+/* line 134, ../sass/mainpage.scss */
+#killshots .killshots-shot {
+  float: left;
+  position: relative;
+}
+/* line 138, ../sass/mainpage.scss */
+#killshots .killshots-shot .img-descript {
+  color: #c9d2ff;
+  background: url("/images/backgrounds/semi-black.png") center center;
+  position: absolute;
+  bottom: 1px;
+  padding: 10px 13px;
+  width: 429px;
+}
+/* line 146, ../sass/mainpage.scss */
+#killshots .killshots-shot .img-descript h4 {
+  font-size: 17px;
+  font-weight: normal;
+  margin: 3px 0 8px;
 }

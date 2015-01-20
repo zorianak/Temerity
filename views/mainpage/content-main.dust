@@ -1,0 +1,22 @@
+<div id="main-content">
+    <div class="center-content">
+        <div id="killshots">
+            <div class="killshots-descript">
+                <h1>Something Warlords</h1>
+                <p>American Main pillage pirate Plate Fleet spike rutters yardarm lanyard grog blossom line. Brethren of the Coast Sail ho smartly gaff hardtack hulk snow carouser Cat o'nine tails come about. Deadlights Nelsons folly line parley Spanish Main hulk long clothes topmast mutiny salmagundi. Sutler Corsair skysail Buccaneer Shiver me timbers yawl spike topsail bilge water Cat o'nine tails. Handsomely measured fer yer chains pirate cog rutters coxswain driver take a caulk avast transom. </p>
+
+                <p>Tender fluke careen keelhaul Pirate Round fire ship loot lugsail maroon warp. Reef man-of-war Yellow Jack coxswain clipper spanker Brethren of the Coast Plate Fleet draft belay. Sloop sheet gally scourge of the seven</p>
+            </div>
+            <div class="killshots-shot">
+                <div class="img-descript">
+                    <h4 class="alverata">Really Cool Killshit</h4>
+                    <p>Scaled down and cropped. Click will show the whole thing.</p>
+                </div>
+                <img src="images/killshots/thumbs/test.png" alt="test killshot" />
+
+            </div>
+             <div class="clear"></div>
+        </div>
+    </div>
+
+</div>

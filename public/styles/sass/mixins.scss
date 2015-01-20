@@ -22,6 +22,9 @@ $shroomvalley: '/images/backgrounds/randomBgs/shroomvalley.png';
 $sunsetwillows: '/images/backgrounds/randomBgs/sunsetwillows.png';
 $zangarra: '/images/backgrounds/randomBgs/zangarra.png';
 
+// Backgrounds
+$transparent-black: '/images/backgrounds/semi-black.png';
+
 
 @mixin linear-gradient($top, $bottom) {
   background: $top; /* Old browsers */

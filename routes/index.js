@@ -13,6 +13,7 @@ var config = {
     header: "mainpage/header-main",
     css: "mainpage/css-main",
     navTemplate: "mainpage/nav-main",
+    content: "mainpage/content-main",
     scripts: [
         {"src": "https://code.jquery.com/jquery-2.1.3.min.js"},
         {"src": "/javascripts/randombg.js"},

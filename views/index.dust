@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="/styles/stylesheets/reset.css" rel="stylesheet">
+        <link href="/styles/stylesheets/temerity.css" rel="stylesheet">
+
+        <title>{title}</title>
+    </head>
+
+    <body>
+        {>header-main/}
+        <h1>{title}</h1>
+
+    </body>
+<html>

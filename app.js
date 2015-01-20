@@ -8,22 +8,15 @@ var bodyParser = require('body-parser');
 var routes = require('./routes/index');
 var users = require('./routes/users');
 
-// The `consolidate` adapter module
-var cons = require('consolidate');
-
 var app = express();
+var kleiDust = require('klei-dust');
 
 app.set('port', process.env.PORT || 3000);
-app.set('views', './views');
+app.set('views', __dirname + '/views');
+    app.engine('dust', kleiDust.dust);
+    app.set('view engine', 'dust');
+    app.set('view options', {layout: false});
 
-// .hbs files should be handled by `handlebars`
-// `consolidate` takes care of loading `handlebars` and interfacing it with Express
-app.engine('hbs', cons.handlebars);
-
-// we set 'hbs' as the default extension of template files
-// this is optional, but you have to specify the view files's extension if you don't
-// it defaults to 'jade'
-app.set('view engine', 'hbs');
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(__dirname + '/public/favicon.ico'));

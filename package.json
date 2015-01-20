@@ -17,6 +17,7 @@
     "grunt-contrib-jshint": "^0.10.0",
     "grunt-simple-mocha": "^0.4.0",
     "handlebars": "^2.0.0",
+    "klei-dust": "^0.8.2",
     "mocha": "^2.1.0",
     "mongodb": "*",
     "mongoskin": "*",
@@ -25,6 +26,8 @@
     "static-favicon": "~1.0.0"
   },
   "devDependencies": {
+    "dustjs-helpers": "^1.5.0",
+    "grunt-dustjs-linkedin": "^0.6.1",
     "serve-favicon": "^2.2.0"
   }
 }

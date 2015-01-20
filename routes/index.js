@@ -8,7 +8,10 @@ var config = {
         name: 'rawr'
     },
     message: "I like cats.",
-    cool: "Kim is cool."
+    cool: "Kim is cool.",
+    header: "../views/header-main.dust",
+    footer: "",
+    content: ""
 };
 
 /* GET home page. */

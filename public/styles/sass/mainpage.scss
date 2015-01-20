@@ -40,7 +40,13 @@
 
 .blurp {
     width: 100%;
+
     background: $blue;
+    background-attachment: fixed;
+    background-position: top center;
+    background-size: cover;
+    background-repeat:no-repeat;
+
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 1);
     text-align: center;
     color: $blue-lavendar;
@@ -58,8 +64,24 @@
     .about2 {
         font-size: 20pt;
     }
-
-    &.moonrise {
-        background: url($moonrise) center left no-repeat;
+    &.faetower{
+        background-image: url($faetower);
     }
+    &.mistvalley{
+        background-image: url($mistvalley);
+    }
+    &.moonrise {
+        background-image: url($moonrise);
+    }
+    &.shroomvalley{
+        background-image: url($shroomvalley);
+    }
+    &.sunsetwillows{
+        background-image: url($sunsetwillows);
+    }
+    &.zangarra{
+        background-image: url($zangarra);
+    }
+
+
 }

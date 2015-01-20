@@ -46,24 +46,48 @@
 .blurp {
   width: 100%;
   background: #4c8bce;
+  background-attachment: fixed;
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
   text-shadow: 2px 2px 8px black;
   text-align: center;
   color: #b7cbea;
 }
-/* line 48, ../sass/mainpage.scss */
+/* line 54, ../sass/mainpage.scss */
 .blurp strong {
   font-weight: bold;
   color: #fff;
 }
-/* line 55, ../sass/mainpage.scss */
+/* line 61, ../sass/mainpage.scss */
 .blurp .about1 {
   font-size: 24pt;
 }
-/* line 58, ../sass/mainpage.scss */
+/* line 64, ../sass/mainpage.scss */
 .blurp .about2 {
   font-size: 20pt;
 }
-/* line 62, ../sass/mainpage.scss */
+/* line 67, ../sass/mainpage.scss */
+.blurp.faetower {
+  background-image: url("/images/backgrounds/randomBgs/faetower.png");
+}
+/* line 70, ../sass/mainpage.scss */
+.blurp.mistvalley {
+  background-image: url("/images/backgrounds/randomBgs/mistvalley.png");
+}
+/* line 73, ../sass/mainpage.scss */
 .blurp.moonrise {
-  background: url("images/backgrounds/randomBgs/moonrise.png") center left no-repeat;
+  background-image: url("/images/backgrounds/randomBgs/moonrise.png");
+}
+/* line 76, ../sass/mainpage.scss */
+.blurp.shroomvalley {
+  background-image: url("/images/backgrounds/randomBgs/shroomvalley.png");
+}
+/* line 79, ../sass/mainpage.scss */
+.blurp.sunsetwillows {
+  background-image: url("/images/backgrounds/randomBgs/sunsetwillows.png");
+}
+/* line 82, ../sass/mainpage.scss */
+.blurp.zangarra {
+  background-image: url("/images/backgrounds/randomBgs/zangarra.png");
 }

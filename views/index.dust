@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link href="/styles/stylesheets/reset.css" rel="stylesheet">
-        <link href="/styles/stylesheets/temerity.css" rel="stylesheet">
+        {! load CSS !}
+        {@eq key=pageName value="Index"}
+            {>css-main/}
+        {:else}
+            {>css-default/}
+        {/eq}
 
         <title>{title}</title>
     </head>
 
     <body>
-        {@eq key=1 value=1}
+        {! Set up the header. The main has links, default does not !}
+        {@eq key=pageName value="Index"}
             {>header-main/}
-            <p>dog</p>
         {:else}
-            {pageName}
-            rawr
+            {>header-default/}
         {/eq}
 
-
-        {pageName}
+        {! Load corn tents !}
     </body>
 <html>

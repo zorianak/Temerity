@@ -18,6 +18,7 @@ var config = {
     scripts: [
         {"src": "https://code.jquery.com/jquery-2.1.3.min.js"},
         {"src": "/javascripts/randombg.js"},
+        {"src": "/javascripts/latest-tweet.js"},
         {"src": "/javascripts/init-main.js"}
     ],
     navItems: [

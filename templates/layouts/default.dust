@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{title}</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="/styles/site.min.css">
+        {?user}
+            {?user.canAccessKeystone}
+                <link rel="stylesheet" type="text/css" href="/keystone/styles/content/editor.min.css">
+            {/user.canAccessKeystone}
+        {/user}
+        {! load CSS !}
+        {>"{css}"/}
+
+        <script src="//use.typekit.net/ylu0beu.js"></script>
+        <script>try{Typekit.load();}catch(e){}</script>
+
+
+    </head>
+
+    <body>
+        {?user}
+            {?user.canAccessKeystone}
+                {> "{adminNav}" /}
+            {/user.canAccessKeystone}
+        {/user}
+
+        {> "{header}" /}
+
+        {> "{navTemplate}" /}
+
+        {! Load corn tents !}
+        {@eq key=pageName value="Index"}
+        {>"{content}"/}
+        {:else}
+        {+content/}
+        {/eq}
+
+
+        {! Load footer !}
+        {>"{footer}"/}
+
+        {!Load scripts !}
+        {#scripts}
+            <script src="{src}" type="text/javascript"></script>
+        {/scripts}
+    </body>
+</html>

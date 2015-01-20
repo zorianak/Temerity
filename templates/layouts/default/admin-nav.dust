@@ -1,0 +1,8 @@
+<div id="keystone-admin">
+    <div class="center-content">
+        <ul id="keystone-links">
+            <li><a href="/keystone">Admin CP</a></li>
+            <li><a href="/keystone/signout">Sign Out</a></li>
+        </ul>
+    </div>
+</div>

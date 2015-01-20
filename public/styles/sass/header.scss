@@ -3,6 +3,7 @@
 header {
     width: 100%;
     @include linear-gradient(#b1b8ff, #c9d2ff);
+    padding-bottom: 7px;
     .logo {
         display: block;
         background: url(../../images/icons.png) top left no-repeat;

@@ -17,8 +17,9 @@ header {
   /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 );
   /* IE6-9 */
+  padding-bottom: 7px;
 }
-/* line 6, ../sass/header.scss */
+/* line 7, ../sass/header.scss */
 header .logo {
   display: block;
   background: url(../../images/icons.png) top left no-repeat;

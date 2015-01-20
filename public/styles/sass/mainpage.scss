@@ -51,8 +51,10 @@
     text-align: center;
     color: $blue-lavendar;
 
+    padding: 60px 0;
+
     strong {
-        font-weight: bold;
+        font-weight: 600;
         color: $white;
     }
 
@@ -60,9 +62,11 @@
 
     .about1 {
         font-size: 24pt;
+        padding-bottom: 23px;
     }
     .about2 {
         font-size: 20pt;
+        padding-bottom: 13px;
     }
     &.faetower{
         background-image: url($faetower);

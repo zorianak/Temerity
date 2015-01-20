@@ -1,0 +1,9 @@
+<div id="nav-div">
+    <div class="center-content">
+        <ul id="main-nav">
+            {#navItems}
+            <li><a href="{src}">{name}</a></li>
+            {/navItems}
+        </ul>
+    </div>
+</div>

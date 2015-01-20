@@ -13,6 +13,7 @@
     <body>
         {! Set up the header. The main has links, default does not !}
         {>"{header}"/}
+        {>"{navTemplate}"/}
 
         {! Load corn tents !}
 

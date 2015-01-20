@@ -12,10 +12,20 @@ var config = {
     pageName: "Index",
     header: "mainpage/header-main",
     css: "mainpage/css-main",
+    navTemplate: "mainpage/nav-main",
     scripts: [
         {"src": "https://code.jquery.com/jquery-2.1.3.min.js"},
         {"src": "/javascripts/randombg.js"},
         {"src": "/javascripts/init-main.js"}
+    ],
+    navItems: [
+        {"name": "Home", "src": "/"},
+        {"name": "News", "src": "/news"},
+        {"name": "Forum", "src": "/forum"},
+        {"name": "The Guild", "src": "/guild"},
+        {"name": "Media", "src": "/media"},
+        {"name": "Recruitment", "src": "/recruitment"},
+        {"name": "Sales", "src": "/sales"}
     ]
 };
 

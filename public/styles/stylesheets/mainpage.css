@@ -94,3 +94,43 @@
 .blurp.zangarra {
   background-image: url("/images/backgrounds/randomBgs/zangarra.png");
 }
+
+/* line 91, ../sass/mainpage.scss */
+#nav-div {
+  background: #b1b8ff;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #b1b8ff 0%, #c9d2ff 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #b1b8ff), color-stop(100%, #c9d2ff));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #b1b8ff 0%, #c9d2ff 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #b1b8ff 0%, #c9d2ff 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #b1b8ff 0%, #c9d2ff 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #b1b8ff 0%, #c9d2ff 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 );
+  /* IE6-9 */
+}
+
+/* line 97, ../sass/mainpage.scss */
+#main-nav li {
+  float: left;
+  font-size: 20pt;
+  font-weight: 600;
+  padding: 15px 20px;
+}
+/* line 103, ../sass/mainpage.scss */
+#main-nav li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #214158;
+  text-decoration: none;
+}
+/* line 110, ../sass/mainpage.scss */
+#main-nav li a:hover {
+  color: #307179;
+}

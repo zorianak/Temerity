@@ -86,6 +86,30 @@
     &.zangarra{
         background-image: url($zangarra);
     }
+}
 
+#nav-div {
+    @include linear-gradient(#b1b8ff, #c9d2ff);
+}
 
+#main-nav {
+
+    li {
+        float: left;
+        font-size: 20pt;
+        font-weight: 600;
+        padding: 15px 20px;
+
+        a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            color: $dark-forest-green;
+            text-decoration: none;
+
+            &:hover {
+                color: $forest-green;
+            }
+        }
+    }
 }

@@ -1,9 +1,10 @@
 <div id="nav-div">
     <div class="center-content">
-        <ul id="main-nav">
+        <ul id="main-nav" class="alverata">
             {#navItems}
             <li><a href="{src}">{name}</a></li>
             {/navItems}
         </ul>
     </div>
+    <div class="clear"></div>
 </div>

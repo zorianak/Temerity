@@ -18,6 +18,9 @@
         {! Load corn tents !}
         {>"{content}"/}
 
+        {! Load footer !}
+        {>"{footer}"/}
+
         {!Load scripts !}
         {#scripts}
             <script src="{src}" type="text/javascript"></script>

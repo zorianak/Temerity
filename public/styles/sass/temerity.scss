@@ -13,6 +13,12 @@ h1 {
     font-size: 30pt;
     margin: 0 0 15px 0;
 }
+h2{
+    font-size: 20pt;
+    color: $dark-forest-green;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
 p {
     padding-bottom: 1em;
 }
@@ -26,4 +32,11 @@ p {
     clear: both;
 }
 
+#footer {
+    background: $plum;
+    color: $mid-lavender;
 
+    -webkit-box-shadow: inset 0px 9px 24px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 9px 24px -10px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 9px 24px -10px rgba(0,0,0,0.75);
+}

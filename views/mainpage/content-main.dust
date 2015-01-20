@@ -17,6 +17,23 @@
             </div>
              <div class="clear"></div>
         </div>
-    </div>
 
+        <div class="four-cols first">
+            <h2>Progression</h2>
+            <p>Fire ship gangplank six pounders Barbary Coast yard flogging rigging chandler Corsair hornswaggle. League fore rigging heave to mutiny code of conduct line scuttle lugger Jack Tar.</p>
+        </div>
+        <div class="four-cols second">
+            <h2>Recruitment</h2>
+            <p>Fire ship gangplank six pounders Barbary Coast yard flogging rigging chandler Corsair hornswaggle. League fore rigging heave to mutiny code of conduct line scuttle lugger Jack Tar.</p>
+        </div>
+        <div class="four-cols third">
+            <h2>Streams</h2>
+            <p>Fire ship gangplank six pounders Barbary Coast yard flogging rigging chandler Corsair hornswaggle. League fore rigging heave to mutiny code of conduct line scuttle lugger Jack Tar.</p>
+        </div>
+        <div class="four-cols fourth">
+            <h2>Twitter</h2>
+            <p>Fire ship gangplank six pounders Barbary Coast yard flogging rigging chandler Corsair hornswaggle. League fore rigging heave to mutiny code of conduct line scuttle lugger Jack Tar.</p>
+        </div>
+    </div>
+    <div class="clear"></div>
 </div>

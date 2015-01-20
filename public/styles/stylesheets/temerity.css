@@ -10,17 +10,34 @@ h1 {
 }
 
 /* line 16, ../sass/temerity.scss */
+h2 {
+  font-size: 20pt;
+  color: #214158;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+/* line 22, ../sass/temerity.scss */
 p {
   padding-bottom: 1em;
 }
 
-/* line 20, ../sass/temerity.scss */
+/* line 26, ../sass/temerity.scss */
 .center-content {
   width: 960px;
   margin: 0 auto;
 }
 
-/* line 25, ../sass/temerity.scss */
+/* line 31, ../sass/temerity.scss */
 .clear {
   clear: both;
+}
+
+/* line 35, ../sass/temerity.scss */
+#footer {
+  background: #6c5ca0;
+  color: #b8c2ff;
+  -webkit-box-shadow: inset 0px 9px 24px -10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: inset 0px 9px 24px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: inset 0px 9px 24px -10px rgba(0, 0, 0, 0.75);
 }

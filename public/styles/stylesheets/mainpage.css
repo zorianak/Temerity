@@ -138,7 +138,7 @@
 /* line 117, ../sass/mainpage.scss */
 #main-content {
   background: #abddfe;
-  padding-top: 15px;
+  padding: 15px 0 20px;
   -webkit-box-shadow: inset 0px 9px 24px -10px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: inset 0px 9px 24px -10px rgba(0, 0, 0, 0.75);
   box-shadow: inset 0px 9px 24px -10px rgba(0, 0, 0, 0.75);
@@ -173,4 +173,41 @@
   font-size: 17px;
   font-weight: normal;
   margin: 3px 0 8px;
+}
+
+/* line 158, ../sass/mainpage.scss */
+.four-cols {
+  float: left;
+  width: 213px;
+  border-left: 1px solid #214158;
+  padding: 0 15px;
+}
+/* line 168, ../sass/mainpage.scss */
+.four-cols.first {
+  border: none;
+  padding-left: 0;
+}
+
+/* line 174, ../sass/mainpage.scss */
+.three-col {
+  float: left;
+  width: 300px;
+  padding: 10px 15px;
+}
+/* line 179, ../sass/mainpage.scss */
+.three-col.first {
+  padding-left: 0;
+}
+/* line 182, ../sass/mainpage.scss */
+.three-col.third {
+  padding-right: 0;
+}
+
+/* line 187, ../sass/mainpage.scss */
+#footer {
+  background: #6c5ca0;
+}
+/* line 190, ../sass/mainpage.scss */
+#footer h2 {
+  color: #b8c2ff;
 }

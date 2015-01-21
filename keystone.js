@@ -26,6 +26,8 @@ keystone.init({
 	'custom engine': cons.dust,
     'view engine': 'dust',
 
+    port: process.env.PORT || '9001',
+
 	'auto update': true,
 	'session': true,
 	'auth': true,

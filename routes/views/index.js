@@ -39,10 +39,13 @@ var limit = 3;
 Post.model.find()
     .limit(3)
     .exec(function(err, posts) {
-        console.log(posts[1]);
+//        console.log(posts[1]);
 
         // lazy coding 101, or I just want the stupid posts to work
-        if(posts.length === 1){
+        if (posts.length === 0){
+            // do nothing
+        }
+        else if(posts.length === 1){
             config.posts = [
                 {"post": posts[0].title,
                     "slug": posts[0].slug,

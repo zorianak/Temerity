@@ -125,6 +125,17 @@
 
 #killshots {
     padding-bottom: 10px;
+    height: 250px;
+    overflow:hidden;
+
+    #kill-scroll {
+    }
+
+    .kill {
+        float: left;
+        height: 100%;
+        width: 960px;
+    }
 
     .killshots-descript {
         float: left;
@@ -134,6 +145,7 @@
     .killshots-shot {
         float: left;
         position: relative;
+        height: 100%;
 
         .img-descript {
             color: $lavender;
@@ -151,6 +163,15 @@
             p{
 
             }
+        }
+    }
+
+    // custom carousel shit for this area
+    .carousel-inner {
+        height: 100%;
+
+        .item {
+            height: 100%;
         }
     }
 }

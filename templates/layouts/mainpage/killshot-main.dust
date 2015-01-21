@@ -1,0 +1,39 @@
+
+
+<div id="killshots" class="carousel slide" data-ride="carousel">
+    <ol id="kill-scroll" class="carousel-indicators">
+{#posts}
+
+    <li data-target="#killshots" {@idx}data-slide-to="{.}" {@eq key="{.}" value="0"}class="active"{/eq}{/idx}>
+
+    </li>
+
+{/posts}<div class="clear"></div>
+        </ol>
+    <div class="carousel-inner" role="listbox">
+       {#posts}
+            <div class="item{@idx}{@eq key="{.}" value="0"} active{/eq}{/idx}">
+                <div class="killshots-descript">
+                    <h1>{title}</h1>
+                    {contentExtend|s}
+                </div>
+
+                <div class="killshots-shot">
+                    <div class="img-descript">
+                        <h4 class="alverata">{title}</h4>
+                        {contentBrief|s}
+                    </div>
+                    <img src="" alt="{title}" />
+                </div>
+            </div>
+       {/posts}
+    </div>
+    <a class="left carousel-control" href="#killshots" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#killshots" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>

@@ -147,19 +147,28 @@
 /* line 126, ../sass/mainpage.scss */
 #killshots {
   padding-bottom: 10px;
+  height: 250px;
+  overflow: hidden;
 }
-/* line 129, ../sass/mainpage.scss */
+/* line 134, ../sass/mainpage.scss */
+#killshots .kill {
+  float: left;
+  height: 100%;
+  width: 960px;
+}
+/* line 140, ../sass/mainpage.scss */
 #killshots .killshots-descript {
   float: left;
   width: 490px;
   margin-right: 15px;
 }
-/* line 134, ../sass/mainpage.scss */
+/* line 145, ../sass/mainpage.scss */
 #killshots .killshots-shot {
   float: left;
   position: relative;
+  height: 100%;
 }
-/* line 138, ../sass/mainpage.scss */
+/* line 150, ../sass/mainpage.scss */
 #killshots .killshots-shot .img-descript {
   color: #c9d2ff;
   background: url("/images/backgrounds/semi-black.png") center center;
@@ -168,46 +177,54 @@
   padding: 10px 13px;
   width: 429px;
 }
-/* line 146, ../sass/mainpage.scss */
+/* line 158, ../sass/mainpage.scss */
 #killshots .killshots-shot .img-descript h4 {
   font-size: 17px;
   font-weight: normal;
   margin: 3px 0 8px;
 }
+/* line 170, ../sass/mainpage.scss */
+#killshots .carousel-inner {
+  height: 100%;
+}
+/* line 173, ../sass/mainpage.scss */
+#killshots .carousel-inner .item {
+  height: 100%;
+}
 
-/* line 158, ../sass/mainpage.scss */
+/* line 179, ../sass/mainpage.scss */
 .four-cols {
   float: left;
   width: 213px;
   border-left: 1px solid #214158;
   padding: 0 15px;
 }
-/* line 168, ../sass/mainpage.scss */
+/* line 189, ../sass/mainpage.scss */
 .four-cols.first {
   border: none;
   padding-left: 0;
 }
 
-/* line 174, ../sass/mainpage.scss */
+/* line 195, ../sass/mainpage.scss */
 .three-col {
   float: left;
   width: 300px;
   padding: 10px 15px;
 }
-/* line 179, ../sass/mainpage.scss */
+/* line 200, ../sass/mainpage.scss */
 .three-col.first {
   padding-left: 0;
 }
-/* line 182, ../sass/mainpage.scss */
+/* line 203, ../sass/mainpage.scss */
 .three-col.third {
   padding-right: 0;
 }
 
-/* line 187, ../sass/mainpage.scss */
+/* line 208, ../sass/mainpage.scss */
 #footer {
   background: #6c5ca0;
 }
-/* line 190, ../sass/mainpage.scss */
+/* line 211, ../sass/mainpage.scss */
 #footer h2 {
   color: #b8c2ff;
 }

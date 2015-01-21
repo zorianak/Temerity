@@ -4,5 +4,5 @@
             <li><a href="/keystone">Admin CP</a></li>
             <li><a href="/keystone/signout">Sign Out</a></li>
         </ul>
-    </div>
+    </div><div class="clear"></div>
 </div>

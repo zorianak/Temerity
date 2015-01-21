@@ -1,7 +1,7 @@
 'use strict()';
 
 var config= {
-	port: 3000
+	port: 9001
 };
 
 module.exports = function(grunt) {

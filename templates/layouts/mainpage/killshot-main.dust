@@ -1,6 +1,6 @@
 
 
-<div id="killshots" class="carousel slide" data-ride="carousel">
+<div id="killshots" class="carousel slide" data-ride="carousel" data-interval="10000">
     <ol id="kill-scroll" class="carousel-indicators">
 {#posts}
 
@@ -23,7 +23,7 @@
                         <h4 class="alverata">{title}</h4>
                         {contentBrief|s}
                     </div>
-                    <img src="" alt="{title}" />
+                    <img src="{postImgSrc}" alt="{title}" />
                 </div>
             </div>
        {/posts}

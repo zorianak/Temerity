@@ -39,7 +39,7 @@ var limit = 3;
 Post.model.find()
     .limit(3)
     .exec(function(err, posts) {
-        console.log(posts[0]);
+        console.log(posts[1]);
 
         // lazy coding 101, or I just want the stupid posts to work
         if(posts.length === 1){
@@ -50,7 +50,7 @@ Post.model.find()
                      "date": posts[0].publishedDate,
                      "contentBrief": posts[0].content.brief,
                      "contentExtend": posts[0].content.extended,
-                     "postImg": posts[0].image
+                     "postImgSrc": posts[0].image.url
                     }
             ]
         } else if(posts.length === 2){
@@ -61,7 +61,7 @@ Post.model.find()
                      "date": posts[0].publishedDate,
                      "contentBrief": posts[0].content.brief,
                      "contentExtend": posts[0].content.extended,
-                     "postImg": posts[0].image
+                     "postImgSrc": posts[0].image.url
                     },
                 {"post": posts[1].title,
                     "slug": posts[1].slug,
@@ -69,7 +69,7 @@ Post.model.find()
                      "date": posts[1].publishedDate,
                      "contentBrief": posts[1].content.brief,
                      "contentExtend": posts[1].content.extended,
-                     "postImg": posts[1].image
+                     "postImgSrc": posts[1].image.url
                     }
             ]
         } else {
@@ -80,7 +80,7 @@ Post.model.find()
                      "date": posts[0].publishedDate,
                      "contentBrief": posts[0].content.brief,
                      "contentExtend": posts[0].content.extended,
-                     "postImg": posts[0].image
+                     "postImgSrc": posts[0].image.url
                     },
                 {"post": posts[1].title,
                     "slug": posts[1].slug,
@@ -88,7 +88,7 @@ Post.model.find()
                      "date": posts[1].publishedDate,
                      "contentBrief": posts[1].content.brief,
                      "contentExtend": posts[1].content.extended,
-                     "postImg": posts[1].image
+                     "postImgSrc": posts[1].image.url
                     },
                 {"post": posts[2].title,
                     "slug": posts[2].slug,
@@ -96,7 +96,7 @@ Post.model.find()
                      "date": posts[2].publishedDate,
                      "contentBrief": posts[2].content.brief,
                      "contentExtend": posts[2].content.extended,
-                     "postImg": posts[2].image
+                     "postImgSrc": posts[2].image.url
                     }
             ]
         }
@@ -111,7 +111,7 @@ exports = module.exports = function(req, res) {
 	locals.section = 'home';
 
     // I want to get the first 3 blog posts and display those
-    console.log(config.posts);
+//    console.log(config.posts);
 
 	// Render the view
 	view.render('index', config);
